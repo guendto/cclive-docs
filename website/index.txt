@@ -7,8 +7,8 @@ About
 cclive is a tool for downloading media from YouTube and similar
 websites. It has a low memory footprint compared to other existing
 tools. cclive works closely with the http://quvi.sourceforge.net/[quvi
-project] to provide a workaround to the flash technology that is being
-utilized by different media hosts to deliver the media content.
+project] to work around to the flash technology that is being utilized
+by different media hosts to deliver the content.
 
 [[li]]
 === License

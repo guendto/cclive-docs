@@ -1,0 +1,116 @@
+include::shared/header.txt[]
+
+[[about]]
+About
+-----
+
+cclive is a tool for downloading media from YouTube and similar
+websites. It has a low memory footprint compared to other existing
+tools. cclive works closely with the http://quvi.sourceforge.net/[quvi
+project] to provide a workaround to the flash technology that is being
+utilized by different media hosts to deliver the media content.
+
+[[li]]
+=== License
+
+include::shared/license.txt[]
+
+[[faq]]
+=== FAQs
+
+  * link:faq_general.html[FAQ: General]
+
+[[status]]
+=== Status
+
+Current::
+  0.7 is the current stable. 0.9 is the current unstable.
+
+Long-term goals::
+  Maintain the 0.7 series. Develop the 0.9 series which will ultimately
+  graduate as the next stable (1.0) replacing the 0.7 series.
+
+[[news]]
+News
+----
+
+2013-02-10::
+  cclive v0.7.12
+  http://sourceforge.net/mailarchive/message.php?msg_id=30469183[released]
+
+2012-12-12::
+  cclive v0.7.11
+  http://sourceforge.net/mailarchive/message.php?msg_id=30218879[released]
+
+2012-12-11::
+  http://cclive.sf.net/mailinglist/[cclive-devel] mailing list added
+
+2012-08-28::
+  cclive v0.7.10
+  http://sourceforge.net/mailarchive/message.php?msg_id=29734620[released]
+
+[[get]]
+Get
+---
+
+Official releases
+~~~~~~~~~~~~~~~~~
+
+* http://sf.net/projects/cclive/files/0.7/[0.7.x, current stable]
+* http://sf.net/projects/cclive/files/0.9/[0.7.x, current unstable]
+
+////
+For building instructions, see the link:#doc[Documentation] section.
+////
+
+git
+~~~
+
+The repository contains the 'maint', the 'maint-0.7', the 'next' and the
+'master' branches.  See the link:contrib.html#branch[Contributing] page
+for more information about the existing branches.
+
+include::shared/repo.txt[]
+
+[[bugs]]
+Reporting bugs
+--------------
+
+Report bugs to the link:mailinglist.html[cclive-devel] mailing list
+where the development and the maintenance is primarily done.  You do not
+have to be subscribed to the list to send a message there.  In the bug
+report, include:
+
+* The version of 'libquvi(3)', 'libquvi-scripts(7)' and 'cclive(1)':
++
+----
+$ cclive --version
+----
+* How to reproduce the bug (in steps)
+* The exact text that was printed out (e.g. if a crash)
+* Anything else you think is relevant
+
+See also link:contrib.html#patches[the contributor guidelines], if you
+have written a patch.
+
+[[doc]]
+Documentation
+-------------
+
+.Manual pages
+
+----
+$ man 1 cclive
+----
+
+Also recommended reading are the libquvi(-scripts) manpages:
+----
+$ man 7 libquvi-scripts
+$ man 3 libquvi
+----
+
+////
+.HOWTOs
+
+* HOWTO: link:doc/other/howto-compile-linux.html[Compile on GNU/Linux]
+////

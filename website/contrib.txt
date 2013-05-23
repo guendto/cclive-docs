@@ -1,0 +1,164 @@
+include::shared/header.txt[]
+
+[[repos]]
+Repositories
+------------
+
+include::shared/repo.txt[]
+
+[[branch]]
+=== Branches
+
+The repository contains the 'maint', the 'maint-0.7', the 'next' and the
+'master' branches.
+
+[frame="topbot",width="75%",grid="none"]
+[cols="<2h,<10"]
+|====
+|maint    |Reserved for the maintenance releases
+|maint-0.7|For the maintenance releases of 0.7
+|master   |Holds the last release, this branch is considered to be
+            'stable' -- it gets updated *only* when the _next_ branch
+            graduates (merged into _master_)
+|next     |The code currently being developed for the next release
+|====
+
+[[patches]]
+Patches
+-------
+
+[[cc]]
+=== Guidelines: Code of conduct
+
+Confirm against the current code::
+  Make sure your patches apply against the current project git
+  repository code. The developers follow the git repository code changes
+  in the <<branch,next>> branch.
+
+Post early, listen to feedback::
+  Post your patches 'early' and 'listen to the feedback'. Never assume
+  that your patch gets automatically committed after posting it. If you
+  wish to have your patch committed, then commit to the discussion.
++
+If your patch has not received any feedback after the initial post:
++
+  * It may have been committed to the repo already (check to confirm)
+  * No one has taken a look at it yet (be patient)
+  * You didn't read this page thoroughly (read again)
+  * The mail got lost (check the link:mailinglist.html[archives])
+
+Major changes::
+  Discuss any major changes on the link:mailinglist.html[cclive-devel]
+  mailing list, first.
+
+Update::
+  Update tests and/or documentation, particularly if you are adding a
+  new feature or changing the output of a program.
+
+Sign-off::
+  <<signoff,Sign-off your patches>>.
+
+Indent::
+  Indent your code to the <<indent,requirements>>.
+
+Guide::
+  See also Richard Jones'
+  http://et.redhat.com/~rjones/how-to-supply-code-to-open-source-projects/[guide]
+  on how to get your code into an open source project.
+
+[[r]]
+=== Recommendations
+
+Use 'http://git-scm.org[git](1)'::
+  Don't be square.
+
+Use 'git-send-email(1)'::
+  Felipe Contreras has written a
+  https://felipec.wordpress.com/2009/10/25/git-send-email-tricks/[guide]
+  on how to use this command effectively.
+
+Split large changes::
+  Split large changes into series of smaller patches (self-contained if
+  possible). Include an explanation of each patch and how the sequence
+  of patches fits together.
+
+Describe changes::
+  In each commit message, describe all of the changes you are making,
+  the subject line describes only one. Write _good_ git commit messages,
+  for example:
++
+----
+Header line: explaining the commit in one line
+
+Body of the commit message, which is a few lines of text explaining
+the changes in details, possibly giving some background about the
+issue being fixed, etc.
+
+The body of the commit message can be >1 paragraphs, and please use
+proper word-wrap, keeping columns shorter than 74 characters. This
+way "git log" will show everything nicely even when it is intended.
+
+Reported-by: Whoever-reported-it
+Signed-off-by: Name <email>
+----
+
+[[signoff]]
+=== Sign-off your patches
+
+Please either send signed-off patches or a pull request with signed-off
+commits.  This means adding a line that says:
+----
+Signed-off-by: Name <email>
+----
+
+at the end of each commit message, indicating that you wrote the code
+and have the right to pass it on as a
+https://www.gnu.org/philosophy/free-sw.html[Free Software] patch. For
+example, with 'git-commit(1)' you would normally use the '-s' switch.
+
+NOTE: 2013-05-23: The project will no longer accept patches that have
+      not been "signed-off"
+
+[[alt]]
+=== Alternative methods of posting
+
+Pull requests::
+  Pull requests are OK, although _patches are preferred_. You can post
+  the requests to the link:mailinglist.html[cclive-devel] mailing list.
+
+[[fmt]]
+Formatting conventions
+----------------------
+
+We have strict code-formatting conventions, particularly, with the new
+code.
+
+  * Keep lines *under 80* characters (72 is preferred)
+  * Use *spaces*, not tabs for indenting
+
+[[c]]
+=== C source code
+
+You can use 'http://astyle.sourceforge.net/[astyle(1)]' for reformatting:
+
+----
+$ astyle --style=gnu -c --indent=spaces=2 foo.cpp
+----
+
+[[indent]]
+=== Code indentation conventions
+
+Number of spaces for each indentation level is 2.
+
+NOTE: The source code must *not* contain any tab characters
+
+[[oc]]
+=== Other conventions
+
+[[vim]]
+vim (modeline)::
+  Each source code file .{cpp,h} in the cclive project must end to line:
++
+----
+// vim: set ts=2 sw=2 tw=72 expandtab:
+----

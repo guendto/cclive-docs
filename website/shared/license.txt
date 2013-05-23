@@ -1,0 +1,5 @@
+
+cclive is
+  http://www.gnu.org/philosophy/free-sw.html[Free Software], licensed
+  under the 'GNU General Public License'
+  (http://www.gnu.org/licenses/gpl.html[GPLv3+])

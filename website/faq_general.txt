@@ -1,0 +1,116 @@
+include::shared/header.txt[]
+
+FAQ: General
+------------
+
+[[li]]
+.How is cclive licensed?
+
+include::shared/license.txt[]
+
+[[os]]
+.Which operating systems does (lib)quvi run on?
+
+GNU/Linux and BSD (supported by the upstream). Other ports may exist,
+none of which the upstream officially supports.
+
+[[clive]]
+.How is cclive different from clive?
+
+cclive (C++) is a rewrite of clive (Perl).
+
+[[hostx]]
+.Why cannot cclive support the x website?
+
+cclive does not directly support any websites, the support is provided
+by libquvi(-scripts) of the http://quvi.sourceforge.net/[quvi project].
+See the quvi's FAQ
+http://quvi.sourceforge.net/faq_general.html#whynotall[entry].
+
+[[nonhttp]]
+.Why does not cclive support x protocol?
+
+The program was designed handle HTTP transfers only. Support for the
+RTMP and other protocols are not currently implemented. Patches welcome.
+
+== Filenames
+
+[[tr]]
+.How can I customize the title filter?
+
+----
+$ man 1 cclive
+----
+
+Look up the --tr option.
+
+[[unicode]]
+.Does cclive support unicode characters?
+
+Yes.
+
+[[noutf8]]
+.Why am I seeing mangled characters in filenames?
+
+This is most likely because your terminal/system hasn't been configured
+to handle UTF-8. You would usually see something like this:
+
+----
+$ echo $LANG
+en_US.UTF-8
+----
+
+On a GNU/Linux system you could get a list of all available public locales:
+----
+$ locale -a
+----
+
+Additionally, some terminals may not handle UTF-8 properly. With
+'urxvt(1)', you might run:
+----
+$ LANG=en_US.UTF-8 urxvt &
+$ cclive URL ;# run in the new terminal
+----
+
+== Other
+
+[[stream]]
+.How can I use (mediaplayer) to stream the media without downloading it?
+
+Since cclive was intended to be a media download tool, you are better
+off using 'quvi(1)' of the http://quvi.sourceforge.net/[quvi project]
+and the '--exec' option.
+
+[[subs]]
+.Could cclive be used to download closed-captions/subtitles from YouTube?
+
+Currently, no. But you could use either 'quvi-get(1)' (0.9+) of the
+http://quvi.sourceforge.net/[quvi project], or
+http://gcap.googlecode.com[gcap(1)]. The former is intended to replace
+the latter, eventually.
+
+[[plists]]
+.Could cclive be used to download YouTube playlists?
+
+Currently, no. But you could use either 'quvi-get(1)' (0.9+) of the
+http://quvi.sourceforge.net/[quvi project], or
+http://umph.googlecode.com[umph(1)]. The former is intended to replace
+the latter, eventually.
+
+[[support]]
+== Support
+
+.What support is available for cclive?
+
+See the link:mailinglist.html[mailing lists]. Before you post to the
+list, please read the manual page for cclive, first.
+
+[[bugs]]
+.Where can I report a bug?
+
+See the link:index.html#bugs[Reporting bugs].
+
+[[patch]]
+.Where can I submit a patch?
+
+See the link:contrib.html[Contributing] pages.

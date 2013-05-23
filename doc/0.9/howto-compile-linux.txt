@@ -1,0 +1,99 @@
+howto-compile-linux(7)
+======================
+
+NAME
+----
+howto-compile-linux - Overview of the steps to compile cclive on GNU/Linux
+
+DESCRIPTION
+-----------
+
+This document is an overview on how to compile and install cclive
+on a GNU/Linux system.
+
+.Notes
+
+* This document is Debian oriented but should translate easily to other
+  GNU/Linux systems
+
+* See the README file for the complete list of the prerequisites
+
+* This documentation uses VPATH to confine all derived files to a single
+  directory, to keep the source directories uncluttered
+
+* These instructions were written with 0.9+ in mind, though they could
+  be followed to build and install 0.7 with different {download links}
+
+Building and installation
+-------------------------
+
+* Install the prerequisites:
++
+----
+$ sudo aptitude install libboost-program-options-dev libboost-system-dev \
+                        libboost-filesystem-dev libboost-iostreams-dev \
+                        libboost-date-time-dev libpcre3-dev
+----
++
+- Note that we will *not* install the libquvi(-scripts) from the Debian
+  repositories. Instead, we will use the most recent official release of
+  libquvi(-scripts), the steps have been described in the quvi's
+  http://quvi.sourceforge.net/doc/other/howto-compile-linux.html[howto-compile-linux(7)]
+  page
++
+- Please follow those steps described in the HOWTO page, 'install at
+  very least *libquvi-scripts* and *libquvi*' (you can skip the
+  installation step for 'quvi') -- once installed, return to this page
+  and continue from below
+
+* Change to the 'tar' directory:
++
+----
+$ cd ~/build/tar
+----
+
+* Get the official release:
++
+----
+$ wget http://downloads.sourceforge.net/project/cclive/0.9/cclive-0.9.1.tar.xz
+$ wget http://downloads.sourceforge.net/project/cclive/0.9/cclive-0.9.1.tar.xz.sig
+$ wget http://downloads.sourceforge.net/project/cclive/0.9/SHA512SUMS
+----
+
+* Verify the downloads (optional, recommended):
++
+----
+$ gpg --recv-keys 0xCAC8C0A9
+$ gpg --verify cclive-0.9.1.tar.xz.sig
+$ gpg --verify SHA512SUMS
+$ sha512sum -c SHA512SUMS
+----
+
+* Extract, compile and install cclive:
++
+----
+$ cd ~/build/
+$ tar xf tar/cclive-0.9.1.tar.xz
+$ cd cclive-0.9.1
+$ mkdir inst ; cd inst
+$ PKG_CONFIG_PATH=$DEST/lib/pkgconfig/ ../configure --prefix=$DEST
+$ make install
+----
++
+The software will be installed to the ~/build/inst/ directory.
+
+Running
+-------
+
+* The executable can be found in the 'bin' directory:
++
+----
+$ $DEST/bin/cclive --version
+----
+
+* Modify MANPATH so that 'man(1)' will find the installed manpages:
++
+----
+$ export MANPATH=$DEST/share/man/:$MANPATH
+$ man 1 cclive
+----

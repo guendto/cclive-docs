@@ -3,19 +3,17 @@ NOTE: The repositories contain the skeleton code only, this means you
       need to run 'bootstrap.sh' after you have cloned the repository,
       see the README file for additional instructions and notes
 
-cclive.git (http://repo.or.cz/w/cclive.git[Browse])::
+cclive.git (http://github.com/legatvs/cclive[Browse])::
 +
 ----
-$ git clone git://repo.or.cz/cclive.git
+$ git clone git://github.com/legatvs/cclive.git
 ----
 
-cclive-np.git (http://repo.or.cz/w/cclive-np.git[Browse])::
+cclive-np.git (http://github.com/legatvs/cclive-np[Browse])::
 +
 ----
-$ git clone git://repo.or.cz/cclive-np.git
+$ git clone git://github.com/legatvs/cclive-np.git
 ----
 
 TIP: 'cclive-np.git' holds misc. files related to the cclive project,
      including this website
-
-NOTE: https://github.com/legatvs/[github] serves as a secondary depot

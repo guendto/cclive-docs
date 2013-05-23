@@ -56,8 +56,10 @@ Get
 Official releases
 ~~~~~~~~~~~~~~~~~
 
-* http://sf.net/projects/cclive/files/0.7/[0.7.x, current stable]
-* http://sf.net/projects/cclive/files/0.9/[0.7.x, current unstable]
+* http://sourceforge.net/projects/cclive/files/0.7/[0.7.x, current stable]
+////
+* http://sourceforge.net/projects/cclive/files/0.9/[0.7.x, current unstable]
+////
 
 ////
 For building instructions, see the link:#doc[Documentation] section.

@@ -36,15 +36,16 @@ $ sudo aptitude install libboost-program-options-dev libboost-system-dev \
 ----
 +
 - Note that we will *not* install the libquvi(-scripts) from the Debian
-  repositories. Instead, we will use the most recent official release of
-  libquvi(-scripts), the steps have been described in the quvi's
-  http://quvi.sourceforge.net/doc/other/howto-compile-linux.html[howto-compile-linux(7)]
-  page
+  repositories, we will use the most recent official release of
+  libquvi(-scripts), instead
 +
-- Please follow those steps described in the HOWTO page, 'install at
-  very least *libquvi-scripts* and *libquvi*' (you can skip the
-  installation step for 'quvi') -- once installed, return to this page
-  and continue from below
+- Follow the instructions of
+  http://quvi.sourceforge.net/doc/other/howto-compile-linux.html[howto-compile-linux(7)]
+  for quvi, 'install at very least *libquvi-scripts* and *libquvi*'
+  can skip the installation step for 'quvi')
++
+- Once they have been installed, return to this page and continue from
+  below
 
 * Change to the 'tar' directory:
 +
@@ -55,8 +56,8 @@ $ cd ~/build/tar
 * Get the official release:
 +
 ----
-$ wget http://downloads.sourceforge.net/project/cclive/0.9/cclive-0.9.1.tar.xz
-$ wget http://downloads.sourceforge.net/project/cclive/0.9/cclive-0.9.1.tar.xz.sig
+$ wget http://downloads.sourceforge.net/project/cclive/0.9/cclive-0.9.0.tar.xz
+$ wget http://downloads.sourceforge.net/project/cclive/0.9/cclive-0.9.0.tar.xz.sig
 $ wget http://downloads.sourceforge.net/project/cclive/0.9/SHA512SUMS
 ----
 
@@ -64,7 +65,7 @@ $ wget http://downloads.sourceforge.net/project/cclive/0.9/SHA512SUMS
 +
 ----
 $ gpg --recv-keys 0xCAC8C0A9
-$ gpg --verify cclive-0.9.1.tar.xz.sig
+$ gpg --verify cclive-0.9.0.tar.xz.sig
 $ gpg --verify SHA512SUMS
 $ sha512sum -c SHA512SUMS
 ----
@@ -73,8 +74,8 @@ $ sha512sum -c SHA512SUMS
 +
 ----
 $ cd ~/build/
-$ tar xf tar/cclive-0.9.1.tar.xz
-$ cd cclive-0.9.1
+$ tar xf tar/cclive-0.9.0.tar.xz
+$ cd cclive-0.9.0
 $ mkdir inst ; cd inst
 $ PKG_CONFIG_PATH=$DEST/lib/pkgconfig/ ../configure --prefix=$DEST
 $ make install

@@ -64,14 +64,10 @@ Get
 Official releases
 ~~~~~~~~~~~~~~~~~
 
-* http://sourceforge.net/projects/cclive/files/0.7/[0.7.x, current stable]
-////
-* http://sourceforge.net/projects/cclive/files/0.9/[0.7.x, current unstable]
-////
+* http://sourceforge.net/projects/cclive/files/0.7/[0.7, current stable]
+* http://sourceforge.net/projects/cclive/files/0.9/[0.9, current unstable]
 
-////
 For building instructions, see the link:#doc[Documentation] section.
-////
 
 git
 ~~~
@@ -119,8 +115,6 @@ $ man 7 libquvi-scripts
 $ man 3 libquvi
 ----
 
-////
 .HOWTOs
 
 * HOWTO: link:doc/other/howto-compile-linux.html[Compile on GNU/Linux]
-////

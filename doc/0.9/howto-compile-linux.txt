@@ -74,6 +74,7 @@ $ sha512sum -c SHA512SUMS
 +
 ----
 $ cd ~/build/
+$ export DEST=`pwd`/inst
 $ tar xf tar/cclive-0.9.0.tar.xz
 $ cd cclive-0.9.0
 $ mkdir inst ; cd inst

@@ -26,7 +26,7 @@ Code of conduct
 
   * Do not send HTML mail
   * Search lists
-    http://sourceforge.net/search/?group_id=354489&type_of_search=mlists[here]
+    http://sourceforge.net/search/?group_id=354617&type_of_search=mlists[here]
   * Do not top post
 
 NOTE: http://www.gnu.org/software/mailman/[GNU Mailman] will convert any

@@ -35,37 +35,39 @@ $ sudo aptitude install libboost-program-options-dev libboost-system-dev \
                         libboost-date-time-dev libpcre3-dev
 ----
 +
-- Note that we will *not* install the libquvi(-scripts) from the Debian
-  repositories, we will use the most recent official release of
-  libquvi(-scripts), instead
-+
-- Follow the instructions of
+NOTE: We will install the most recent official version of libquvi and
+      libquvi-scripts, not the Debian packaged binaries
+
+* Follow the
   http://quvi.sourceforge.net/doc/other/howto-compile-linux.html[howto-compile-linux(7)]
-  for quvi, 'install at very least *libquvi-scripts* and *libquvi*'
-  can skip the installation step for 'quvi')
+  installation steps for the _quvi_ components
 +
-- Once they have been installed, return to this page and continue from
-  below
+NOTE: Install *libquvi-scripts* and *libquvi* (you can skip the
+      installation steps for 'quvi') -- return to this page after that
+      and continue from below
 
-* Change to the 'tar' directory:
+* Get the latest official release of cclive:
 +
 ----
-$ cd ~/build/tar
+$ cd ~/build/tar/
+$ curl -JLO# "http://cclive.sf.net/latest?q=0.9"
 ----
++
+TIP: You can also use _wget --content-disposition URL_ instead of
+     'curl(1)'
 
-* Get the official release:
+* Verify the download (optional, recommended):
 +
 ----
-$ wget http://downloads.sourceforge.net/project/cclive/0.9/cclive-0.9.0.tar.xz
-$ wget http://downloads.sourceforge.net/project/cclive/0.9/cclive-0.9.0.tar.xz.sig
-$ wget http://downloads.sourceforge.net/project/cclive/0.9/SHA512SUMS
-----
-
-* Verify the downloads (optional, recommended):
-+
-----
+$ curl -JLO# "http://cclive.sf.net/latest?q=0.9&sig"
 $ gpg --recv-keys 0xCAC8C0A9
-$ gpg --verify cclive-0.9.0.tar.xz.sig
+$ gpg --verify cclive-*.tar.xz.sig
+----
++
+Verify the additional SHA512 checksum (for the paranoid):
++
+----
+$ curl -JLO# "http://cclive.sf.net/latest?q=0.9&csum"
 $ gpg --verify SHA512SUMS
 $ sha512sum -c SHA512SUMS
 ----
@@ -75,14 +77,12 @@ $ sha512sum -c SHA512SUMS
 ----
 $ cd ~/build/
 $ export DEST=`pwd`/inst
-$ tar xf tar/cclive-0.9.0.tar.xz
-$ cd cclive-0.9.0
-$ mkdir inst ; cd inst
+$ tar xf tar/cclive-*.tar.xz
+$ cd cclive-* ; mkdir tmp ; cd tmp
 $ PKG_CONFIG_PATH=$DEST/lib/pkgconfig/ ../configure --prefix=$DEST
 $ make install
+$ cd ~/build/
 ----
-+
-The software will be installed to the ~/build/inst/ directory.
 
 Running
 -------

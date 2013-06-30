@@ -64,10 +64,22 @@ Get
 Official releases
 ~~~~~~~~~~~~~~~~~
 
-* http://sourceforge.net/projects/cclive/files/0.7/[0.7, current stable]
-* http://sourceforge.net/projects/cclive/files/0.9/[0.9, current unstable]
+.STABLE (0.7)
 
-For building instructions, see the link:#doc[Documentation] section.
+* http://cclive.sourceforge.net/latest?q=0.7[tarball]
+    (http://cclive.sourceforge.net/latest?q=0.7&sig[.sig]
+     | http://cclive.sourceforge.net/latest?q=0.7&csum[SHA512SUMS]
+     | http://sourceforge.net/projects/cclive/files/0.7/[Browse])
+
+.UNSTABLE (0.9)
+
+* http://cclive.sourceforge.net/latest?q=0.9[tarball]
+    (http://cclive.sourceforge.net/latest?q=0.9&sig[.sig]
+     | http://cclive.sourceforge.net/latest?q=0.9&csum[SHA512SUMS]
+     | http://sourceforge.net/projects/cclive/files/0.9/[Browse])
+
+For building instructions, see the link:#doc[Documentation] section for
+<<howtos,HOWTOs>>.
 
 git
 ~~~
@@ -115,6 +127,7 @@ $ man 7 libquvi-scripts
 $ man 3 libquvi
 ----
 
+[[howtos]]
 .HOWTOs
 
-* HOWTO: link:doc/other/howto-compile-linux.html[Compile on GNU/Linux]
+* HOWTO: link:doc/other/howto-compile-linux.html[Compile 0.9+ on GNU/Linux]

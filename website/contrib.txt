@@ -36,9 +36,10 @@ Confirm against the current code::
   in the <<branch,next>> branch.
 
 Post early, listen to feedback::
-  Post your patches 'early' and 'listen to the feedback'. Never assume
-  that your patch gets automatically committed after posting it. If you
-  wish to have your patch committed, then commit to the discussion.
+  Post your patches (to link:mailinglist.html[cclive-devel] list)
+  'early' and 'listen to the feedback'. Never assume that your patch
+  gets automatically committed after posting it. If you wish to have
+  your patch committed, then commit to the discussion.
 +
 If your patch has not received any feedback after the initial post:
 +

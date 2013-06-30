@@ -1,5 +1,10 @@
 
-cclive is
+0.9 and later::
+  http://www.gnu.org/philosophy/free-sw.html[Free Software], licensed
+  under the 'GNU *Affero* General Public License'
+  (http://www.gnu.org/licenses/agpl.html[AGPLv3+]).
+
+0.7 series::
   http://www.gnu.org/philosophy/free-sw.html[Free Software], licensed
   under the 'GNU General Public License'
   (http://www.gnu.org/licenses/gpl.html[GPLv3+])

@@ -34,6 +34,10 @@ Long-term goals::
 News
 ----
 
+2013-07-16::
+  cclive v0.9.1 (unstable)
+  http://www.mail-archive.com/cclive-devel@lists.sourceforge.net/msg00000.html[released]
+
 2013-06-30::
   cclive v0.7.14
   http://sourceforge.net/mailarchive/message.php?msg_id=31115340[released]

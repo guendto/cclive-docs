@@ -13,7 +13,8 @@ Mailing lists
   read-only|
   Very low
 |http://lists.sourceforge.net/lists/listinfo/cclive-devel[cclive-devel]|
-  http://sourceforge.net/mailarchive/forum.php?forum_name=cclive-devel[sf]|
+  http://sourceforge.net/mailarchive/forum.php?forum_name=cclive-devel[sf],
+  http://www.mail-archive.com/cclive-devel@lists.sourceforge.net/info.html[ma]|
   Development list for details of the new features, bug reports and fixes
     (also the main list for the users of 'cclive(1)')|
   r/w=any|

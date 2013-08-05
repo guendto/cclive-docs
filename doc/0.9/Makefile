@@ -21,6 +21,7 @@ ASCIIDOC_OPTS=\
   -a icons
 
 MAN7_TXT=\
+  cclive-ptnine.txt\
   howto-compile-linux.txt
 
 MAN_TXT=$(MAN7_TXT)

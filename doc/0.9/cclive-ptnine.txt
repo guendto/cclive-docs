@@ -1,0 +1,137 @@
+cclive-ptnine(7)
+================
+
+NAME
+----
+cclive-ptnine - Overview of the changes in the cclive 0.9
+
+DESCRIPTION
+-----------
+
+This document is not a comprehensive list of the changes since the 0.7
+but a quick overview.
+
+=== Shaking off the bloat
+
+The goals of 0.9 are:
+
+* Make better use of the Boost libraries
+* Apply more of C++ eloquence
+* Clean up the code base
+
+Most of this means rewriting some of the code completely which is likely
+to introduce new bugs that need to be ironed out for the 1.0 (next
+stable).
+
+=== Backwards-compatibility
+
+0.9 aims to retain the backwards-compatibility with the 0.7 series.
+That said, there are likely going to be minor changes (e.g. --quiet and
+--verbose-libcurl -> --verbosity).
+
+[[hl]]
+HIGHLIGHTS
+----------
+
+Improved option parsing::
+  While Boost.Program_Options is a useful addition to the Boost
+  libraries, it is also one of the least documented one. 0.9 aims to
+  improve the use of PO.
+
+Improved input parsing::
+  RFC2483 is now supported. This makes it possible to use cclive 0.9+
+  with quvi 0.9+. The input URIs are now also properly unescaped.
++
+----
+$ quvi dump PLAYLIST_URL | cclive
+$ quvi scan URL | cclive
+----
+
+libquvi 0.9+ support::
+  cclive compiles now with either libquvi 0.4 or 0.9+. When compiled
+  with the latter, cclive will hint using `--stream' instead of the (now
+  deprecated) `--prefer-format' option.
+
+Removed features::
+  All of those features marked as "deprecated" in the 0.7 have been
+  removed in the 0.9 series.
+
+Licensing changes::
+  See <<li,LICENSE>> for more information.
+
+[[li]]
+LICENSE
+-------
+
+include::../../website/shared/license.txt[]
+
+[[wh]]
+WHERE
+-----
+
+See http://cclive.sourceforge.net/#get.  Further maintenance of the 0.7
+series will take place in the 'maint-0.7' branch.
+
+[[unst]]
+UNSTABLE
+--------
+
+The 0.9 series is *unstable*. Expect bugs.  0.9 will gradually mature as
+the next stable (1.0) replacing the current stable (0.7).
+
+[[ifpkg]]
+=== If you are a packager
+
+Unless you are packaging bleeding-edge software for a bleeding-edge
+distro, it is best to wait for the next stable (1.0).
+
+[[inst]]
+INSTALLATION
+------------
+
+cclive source tarball contains the *README* file which will cover the
+basic instructions and provides any additional information (e.g.
+regarding any non-standard options not covered by GNU Autotools).
+
+NOTE: *Read the README first*, it is maintained by-hand and exists for a
+      reason
+
+If you cannot find the answers in the README, post your questions to the
+<<rb,cclive-devel>> mailing list. It's possible that some of details may
+still be missing from the README.  The INSTALL file is the standard file
+provided by GNU Autotools.
+
+See also::
+  link:howto-compile-linux.html[HOWTO: Compile cclive on GNU/Linux]
+
+[[doc]]
+DOCUMENTATION
+-------------
+
+=== Generation
+
+Typically:
+
+----
+$ make doc
+----
+
+For additional notes, see the README files.
+
+=== Manual pages
+
+The manpages (source files) are written in 'asciidoc(1)' syntax and can
+be found under the doc/ subdir. They are accessible (after installation)
+in the typical way:
+
+----
+$ man 1 cclive
+----
+
+[[rb]]
+Reporting bugs
+--------------
+
+cclive-devel mailing list::
+  Use the this list for discussion and reporting bugs, see
+  http://cclive.sourceforge.net/#bugs

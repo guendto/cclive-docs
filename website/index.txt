@@ -71,8 +71,7 @@ Official releases
      | http://cclive.sourceforge.net/latest?q=0.9&csum[SHA512SUMS]
      | http://sourceforge.net/projects/cclive/files/0.9/[Browse])
 
-For building instructions, see the link:#doc[Documentation] section for
-<<howtos,HOWTOs>>.
+TIP: For building instructions, see the <<doc,Documentation>>
 
 git
 ~~~
@@ -114,13 +113,17 @@ Documentation
 $ man 1 cclive
 ----
 
-Also recommended reading are the libquvi(-scripts) manpages:
+=== Recommended reading
+
+* The libquvi(-scripts) manpages:
++
 ----
 $ man 7 libquvi-scripts
 $ man 3 libquvi
 ----
 
-[[howtos]]
-.HOWTOs
+* An link:doc/other/cclive-ptnine.html[overview] of the changes in the
+  0.9+ series -- 'cclive-ptnine(7)'
 
-* HOWTO: link:doc/other/howto-compile-linux.html[Compile 0.9+ on GNU/Linux]
+* link:doc/other/howto-compile-linux.html[HOWTO: Compile 0.9+ on
+  GNU/Linux] -- 'howto-compile-linux(7)'

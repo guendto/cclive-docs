@@ -1,5 +1,25 @@
 include::shared/header.txt[]
 
+[[news]]
+News
+----
+
+2013-08-05::
+  cclive v0.7.15 (stable)
+  http://www.mail-archive.com/cclive-devel@lists.sourceforge.net/msg00003.html[released]
+
+2013-07-16::
+  cclive v0.9.1 (unstable)
+  http://www.mail-archive.com/cclive-devel@lists.sourceforge.net/msg00000.html[released]
+
+2013-06-30::
+  cclive v0.7.14
+  http://sourceforge.net/mailarchive/message.php?msg_id=31115340[released]
+
+2013-05-25::
+  cclive v0.9.0 (unstable)
+  http://sourceforge.net/mailarchive/message.php?msg_id=30894068[released]
+
 [[about]]
 About
 -----
@@ -29,30 +49,6 @@ Current::
 Long-term goals::
   Maintain the 0.7 series. Develop the 0.9 series which will ultimately
   graduate as the next stable (1.0) replacing the 0.7 series.
-
-[[news]]
-News
-----
-
-2013-07-16::
-  cclive v0.9.1 (unstable)
-  http://www.mail-archive.com/cclive-devel@lists.sourceforge.net/msg00000.html[released]
-
-2013-06-30::
-  cclive v0.7.14
-  http://sourceforge.net/mailarchive/message.php?msg_id=31115340[released]
-
-2013-05-25::
-  cclive v0.9.0 (unstable)
-  http://sourceforge.net/mailarchive/message.php?msg_id=30894068[released]
-
-2013-05-25::
-  cclive v0.7.13
-  http://sourceforge.net/mailarchive/message.php?msg_id=30893915[released]
-
-2013-02-10::
-  cclive v0.7.12
-  http://sourceforge.net/mailarchive/message.php?msg_id=30469183[released]
 
 [[get]]
 Get

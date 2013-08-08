@@ -32,7 +32,8 @@ Building and installation
 ----
 $ sudo aptitude install libboost-program-options-dev libboost-system-dev \
                         libboost-filesystem-dev libboost-iostreams-dev \
-                        libboost-date-time-dev libpcre3-dev
+                        libboost-date-time-dev libglibmm-2.4-dev \
+                        libpcre3-dev
 ----
 +
 NOTE: We will install the most recent official version of libquvi and

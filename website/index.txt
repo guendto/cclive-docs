@@ -4,6 +4,10 @@ include::shared/header.txt[]
 News
 ----
 
+2013-09-14::
+  cclive v0.7.16 (stable)
+  http://www.mail-archive.com/cclive-devel@lists.sourceforge.net/msg00009.html[released]
+
 2013-08-08::
   cclive v0.9.2 (unstable)
   http://www.mail-archive.com/cclive-devel@lists.sourceforge.net/msg00004.html[released]
@@ -15,14 +19,6 @@ News
 2013-07-16::
   cclive v0.9.1 (unstable)
   http://www.mail-archive.com/cclive-devel@lists.sourceforge.net/msg00000.html[released]
-
-2013-06-30::
-  cclive v0.7.14
-  http://sourceforge.net/mailarchive/message.php?msg_id=31115340[released]
-
-2013-05-25::
-  cclive v0.9.0 (unstable)
-  http://sourceforge.net/mailarchive/message.php?msg_id=30894068[released]
 
 [[about]]
 About

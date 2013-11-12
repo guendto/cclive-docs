@@ -8,12 +8,12 @@ Mailing lists
 |====
 |List|Archives|Description|Type|Traffic
 |http://lists.sourceforge.net/lists/listinfo/cclive-announce[cclive-announce]|
-  http://sourceforge.net/mailarchive/forum.php?forum_name=cclive-announce[sf]|
+  http://sourceforge.net/p/cclive/mailman/cclive-announce/?style=threaded[sf]|
   Announcement list for the project news|
   read-only|
   Very low
 |http://lists.sourceforge.net/lists/listinfo/cclive-devel[cclive-devel]|
-  http://sourceforge.net/mailarchive/forum.php?forum_name=cclive-devel[sf],
+  http://sourceforge.net/p/cclive/mailman/cclive-devel/?style=threaded[sf],
   http://www.mail-archive.com/cclive-devel@lists.sourceforge.net/info.html[ma]|
   Development list for details of the new features, bug reports and fixes
     (also the main list for the users of 'cclive(1)')|
@@ -26,8 +26,7 @@ Code of conduct
 ~~~~~~~~~~~~~~~
 
   * Do not send HTML mail
-  * Search lists
-    http://sourceforge.net/search/?group_id=354617&type_of_search=mlists[here]
+  * Search lists _first_
   * Do not top post
 
 NOTE: http://www.gnu.org/software/mailman/[GNU Mailman] will convert any
